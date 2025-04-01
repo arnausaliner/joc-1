@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://bp20x247qsh16"]
+
+[ext_resource type="Texture2D" uid="uid://cj5u43uclka3e" path="res://icon.svg" id="1_b7ldk"]
+[ext_resource type="Script" uid="uid://sbyuyfls46iw" path="res://escena_1.gd" id="1_l21el"]
+[ext_resource type="Texture2D" uid="uid://thgryvc3pe3b" path="res://Imatges/Juan.webp" id="2_fndph"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_l21el")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(947, 342)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("1_b7ldk")
+
+[node name="Sprite2D" type="Sprite2D" parent="Sprite2D"]
+position = Vector2(-1115, -75)
+scale = Vector2(1.33613, 0.866569)
+texture = ExtResource("2_fndph")

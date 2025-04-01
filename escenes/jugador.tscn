@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://eu4kbx2ukuns"]
+
+[ext_resource type="Script" uid="uid://b7vl81xaw3k0m" path="res://sprite_2d.gd" id="1_i6vpn"]
+[ext_resource type="Texture2D" uid="uid://b0e1itwfx5bc5" path="res://Imatges/tralalerotralala.jpg" id="2_7651m"]
+[ext_resource type="Texture2D" uid="uid://cj5u43uclka3e" path="res://icon.svg" id="3_rw5x0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0e48y"]
+size = Vector2(222, 222)
+
+[node name="jugador" type="CharacterBody2D"]
+script = ExtResource("1_i6vpn")
+
+[node name="TralaleroTralala" type="Sprite2D" parent="."]
+texture = ExtResource("2_7651m")
+
+[node name="roda" type="Sprite2D" parent="TralaleroTralala"]
+position = Vector2(112.5, 112.5)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_rw5x0")
+
+[node name="roda2" type="Sprite2D" parent="TralaleroTralala"]
+position = Vector2(-112.5, 112.5)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_rw5x0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_0e48y")
