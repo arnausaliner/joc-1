@@ -12,7 +12,7 @@ color = Color(1, 1, 0, 1)
 
 [node name="Area2D2" parent="." instance=ExtResource("3_epypp")]
 position = Vector2(764, 104)
-color = Color(0.985725, 0, 0.316579, 1)
+color = Color(0.730216, 0.471893, 0, 1)
 
 [node name="jugador" parent="." instance=ExtResource("1_0e48y")]
 position = Vector2(182, -25)
